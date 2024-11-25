@@ -9,15 +9,15 @@ function closeOnEscape(e) {
     const nav = document.getElementById('nav');
     const navSections = nav.querySelector('.nav-sections');
     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections);
-      navSectionExpanded.focus();
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections);
-      nav.querySelector('button').focus();
-    }
+    // if (navSectionExpanded && isDesktop.matches) {
+    //   // eslint-disable-next-line no-use-before-define
+    //   toggleAllNavSections(navSections);
+    //   navSectionExpanded.focus();
+    // } else if (!isDesktop.matches) {
+    //   // eslint-disable-next-line no-use-before-define
+    //   toggleMenu(nav, navSections);
+    //   nav.querySelector('button').focus();
+    // }
   }
 }
 
@@ -26,13 +26,13 @@ function closeOnFocusLost(e) {
   if (!nav.contains(e.relatedTarget)) {
     const navSections = nav.querySelector('.nav-sections');
     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections, false);
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections, false);
-    }
+    // if (navSectionExpanded && isDesktop.matches) {
+    //   // eslint-disable-next-line no-use-before-define
+    //   toggleAllNavSections(navSections, false);
+    // } else if (!isDesktop.matches) {
+    //   // eslint-disable-next-line no-use-before-define
+    //   toggleMenu(nav, navSections, false);
+    // }
   }
 }
 
@@ -173,10 +173,10 @@ export default async function decorate(block) {
 }
 
 window.onscroll = function () {
-  var header = document.querySelector(".nav-wrapper");
-  if (window.pageYOffset > 50) {
-      header.classList.add("reduce-header-size");
-  } else {
-      header.classList.remove("reduce-header-size");
-  }
-};
+    var header = document.querySelector(".nav-wrapper");
+    if (window.pageYOffset > 50) {
+        header.classList.add("reduce-header-size");
+    } else {
+        header.classList.remove("reduce-header-size");
+    }
+}

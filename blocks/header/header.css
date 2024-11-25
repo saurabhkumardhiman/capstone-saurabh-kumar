@@ -4,17 +4,24 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
-  padding: 50px 0;
+  padding: 25px 0;
   margin-top: 40px;
-  box-shadow: 0px 3px 5px #AAAAAA;
-  transition-timing-function: linear;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
+  -webkit-transition: padding-bottom .5s ease, padding-top .5s;
 }
 
-header .nav-wrapper.reduce-header-size {
-  padding: 15px 0;
-  box-shadow: 0px 3px 5px #AAAAAA;
-  ;
-  transition-timing-function: linear;
+@media (width >= 900px) {
+  header .nav-wrapper {
+    padding: 50px 0;
+  }
+}
+
+@media (width >= 900px) {
+  header .nav-wrapper.reduce-header-size {
+    padding: 15px 0;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
+    -webkit-transition: padding-bottom .5s ease, padding-top .5s;
+  } 
 }
 
 header nav {
@@ -93,7 +100,7 @@ header nav .nav-hamburger button {
 @media (width <=900px) {
   header nav[aria-expanded='true'] .nav-hamburger-icon {
     position: absolute;
-    top: 70px;
+    top: 45px;
   }
 }
 
@@ -117,9 +124,9 @@ header nav .nav-hamburger button {
   header nav[aria-expanded='true'] .form {
     position: absolute;
     width: auto;
-    width: 115px;
+    width: 148px;
     right: 32px;
-    top: 50px;
+    top: 25px;
   } 
 }
 
@@ -208,8 +215,21 @@ header nav .nav-sections {
 }
 
 header nav .logo img {
-  width: 130px;
-  height: 50px;
+  width: 96px;
+  height: 35px;
+}
+
+@media (width >= 900px) {
+  header nav .logo img {
+    width: 130px;
+    height: 50px;
+  }
+}
+
+@media (width <= 900px) {
+header nav[aria-expanded='true'] .logo img {
+    margin-top: 8px;
+  }
 }
 
 header nav[aria-expanded='true'] .nav-sections {
@@ -377,4 +397,44 @@ header nav .nav-tools {
 
 .sub-nav-bar p {
   margin: 0;
+}
+
+@media (width <= 900px) {
+  header nav[aria-expanded='false'] .default-content-wrapper {
+    position: relative;
+  }
+}
+
+@media (width <= 900px) {
+  header nav[aria-expanded='true'] .search-bar {
+    display: none;
+  }
+}
+
+@media (width >= 900px) {
+  header nav[aria-expanded='true'] .search-bar p {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    right: auto;
+  }
+}
+
+@media (width >= 900px) {
+  header .nav-wrapper.reduce-header-size nav[aria-expanded='true'] .search-bar p {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+  }
+}
+
+@media (width >= 900px) {
+  header nav .search-bar {
+    position: relative;
+  }
+}
+
+header nav[aria-expanded='false'] .search-bar p {
+  position: absolute;
+  top: 20px;
 }
