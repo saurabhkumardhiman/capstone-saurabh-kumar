@@ -255,3 +255,10 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Over writing below properties as these buttons are common through out */
+.button-container a {
+  background-color: #FFEA00 !important;
+  color: #000000 !important;
+  border-radius: 0 !important;
+}
