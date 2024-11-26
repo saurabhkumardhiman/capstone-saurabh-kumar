@@ -179,3 +179,18 @@
   .carousel-slide-content table tbody tr td {
     font-size: 16px;
   }
+
+  .carousel-container .default-content-wrapper p {
+    font-size: 36px;
+    font-family: 'roboto';
+    padding-bottom: 10px;
+  }
+
+  .carousel-container .default-content-wrapper p::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+  }
