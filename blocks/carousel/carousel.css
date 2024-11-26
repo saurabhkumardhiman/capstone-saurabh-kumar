@@ -16,6 +16,12 @@
     overflow: scroll clip;
     height: 40rem;
   }
+
+  @media (width >= 900px) {
+  .carousel .carousel-slides {
+      height: 39rem;
+    }
+  }
   
   .carousel .carousel-slides::-webkit-scrollbar {
     display: none;
