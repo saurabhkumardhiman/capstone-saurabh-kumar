@@ -16,6 +16,16 @@ header .nav-wrapper {
   }
 }
 
+header {
+  margin-bottom: 90px;
+}
+
+@media (width >= 900px) {
+  header {
+    margin-bottom: 140px;
+  }
+}
+
 @media (width >= 900px) {
   header .nav-wrapper.reduce-header-size {
     padding: 15px 0;
@@ -414,16 +424,17 @@ header nav .nav-tools {
 @media (width >= 900px) {
   header nav[aria-expanded='true'] .search-bar p {
     position: absolute;
-    top: 20px;
+    top: 15px;
     z-index: 1;
     right: auto;
+    left: 3px;
   }
 }
 
 @media (width >= 900px) {
   header .nav-wrapper.reduce-header-size nav[aria-expanded='true'] .search-bar p {
     position: absolute;
-    top: 20px;
+    top: 15px;
     z-index: 1;
   }
 }
@@ -436,5 +447,6 @@ header nav .nav-tools {
 
 header nav[aria-expanded='false'] .search-bar p {
   position: absolute;
-  top: 20px;
+  top: 18px;
+  left: 3px;
 }
