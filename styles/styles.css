@@ -262,3 +262,7 @@ main .section.highlight {
   color: #000000 !important;
   border-radius: 0 !important;
 }
+
+.button-container a:hover {
+  text-decoration: underline;
+}
