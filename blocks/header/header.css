@@ -266,8 +266,8 @@ header nav .header-links ul {
 
 header nav .header-links ul li {
   list-style: none;
-  padding: 15px;
-  font-size: 16px;
+  padding: 16px;
+  font-size: 14px;
 }
 
 header nav .header-links ul li:hover {
