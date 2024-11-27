@@ -1,0 +1,65 @@
+.section.faqs-container {
+    padding-top: 40px;
+}
+
+.faqs>div {
+    display: block;
+}
+
+@media (width >=900px) {
+    .faqs>div {
+        display: flex;
+        gap: 48px;
+    }
+}
+
+.faqs>div div:first-of-type {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.faqs>div div:first-of-type p:first-of-type {
+    font-size: 36px;
+    font-family: 'roboto';
+    margin-top: 0;
+}
+
+.faqs>div div:first-of-type p:first-of-type:after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+}
+
+.faqs>div div:first-of-type p:last-of-type {
+    font-size: 16px;
+    font-family: 'roboto';
+}
+
+.faqs>div div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (width >=900px) {
+    .faqs>div div:last-of-type {
+        width: 60%;
+    }
+}
+
+.faqs>div div:last-of-type h3 {
+    font-size: 32px;
+    font-family: 'roboto';
+    font-weight: 400;
+}
+
+.faqs>div div:last-of-type p {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 400;
+    line-height: 2.5;
+}
