@@ -1,0 +1,91 @@
+.section.main-heading {
+    padding-top: 40px;
+}
+
+.section.main-heading .default-content-wrapper p {
+    font-size: 42px;
+    font-family: 'roboto';
+}
+
+.section.description .default-content-wrapper p {
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'roboto';
+}
+
+.about-us > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
+  }
+  
+  .about-us > ul > li {
+    background-color: var(--background-color);
+    cursor: pointer;
+  }
+
+  .about-us-card-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-us .about-us-card-body {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-us .about-us-card-body h3 {
+    font-size: 24px;
+    color: #202020;
+    font-family: 'roboto';
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .about-us .about-us-card-body p {
+    color: #202020;
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+
+  .about-us .about-us-card-body p .icon {
+    color: #696969;
+    font-size: 14px;
+    background-color: #202020;
+    padding: 10px;
+  }
+  
+  .about-us .about-us-card-image {
+    line-height: 0;
+  }
+  
+  .about-us > ul > li img {
+    width: 184px;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .section.sub-heading .default-content-wrapper p {
+    font-size: 36px;
+    font-family: 'roboto';
+  }
+
+  .section.sub-heading .default-content-wrapper p::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+  }
+  
