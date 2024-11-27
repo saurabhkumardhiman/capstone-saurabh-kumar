@@ -453,4 +453,5 @@ header nav[aria-expanded='false'] .search-bar p {
 
 header nav .search-bar p img {
   transform: rotate(90deg);
+  filter: opacity(0.75);
 }
