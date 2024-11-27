@@ -450,3 +450,7 @@ header nav[aria-expanded='false'] .search-bar p {
   top: 18px;
   left: 3px;
 }
+
+header nav .search-bar p img {
+  transform: rotate(90deg);
+}
