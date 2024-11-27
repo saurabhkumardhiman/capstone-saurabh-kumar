@@ -57,10 +57,11 @@
   }
 
   .accordion .accordion-item-label p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'roboto';
     font-weight: 400;
     padding-right: 32px;
+    color: #000000;
   }
 
   .accordion .accordion-item-label {
