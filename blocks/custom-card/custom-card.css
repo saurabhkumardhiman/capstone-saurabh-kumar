@@ -1,0 +1,111 @@
+.custom-card > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
+  }
+  
+  .custom-card > ul > li {
+    background-color: var(--background-color);
+    cursor: pointer;
+  }
+  
+  .custom-card .custom-card-body {
+    margin: 0;
+  }
+  
+  .custom-card .custom-card-body h3 {
+    font-size: 18px;
+    color: #202020;
+  }
+  
+  .custom-card .custom-card-body p {
+    color: #696969;
+    font-size: 10px;
+  }
+  
+  .custom-card .custom-card-image {
+    line-height: 0;
+    padding-top: 24px;
+  }
+
+  .custom-card > ul > li {
+    position: relative;
+    border: 1px solid #CCCCCC;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  .custom-card > ul > li::after {
+    width: 0;
+    content: '';
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 72px solid #ffea00;
+    border-bottom: 54px solid transparent;
+    display: block;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+.custom-card .custom-card-body {
+    position: relative;
+}
+
+.custom-card .custom-card-body h2{
+    font-size: 18px;
+    font-family: 'roboto';
+    color: #202020;
+    padding-left: 12px;
+}
+
+.custom-card .custom-card-body p:last-of-type {
+    display: inline-block;
+    background-color: #EBEBEB;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.custom-card .custom-card-body p .icon {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 15px;
+}
+  
+  .custom-card > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  
+  .custom-card-container .default-content-wrapper:first-of-type p {
+    font-size: 36px;
+    font-family: 'roboto';
+    padding-bottom: 10px;
+  }
+  
+  .custom-card-container .default-content-wrapper:first-of-type p::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+  }
+
+  .section .default-content-wrapper #members-only {
+    font-size: 36px;
+    font-family: 'roboto';
+  }
+
+  .section .default-content-wrapper #members-only + p {
+    font-size: 16px;
+    font-family: 'roboto';
+  }
+
+
+  

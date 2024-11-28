@@ -184,3 +184,39 @@
   .form input {
     padding-left: 30px;
   }
+
+  .registration-form .form button {
+    margin-top: 20px !important;
+    background-color: #FFEA00;
+    color: #202020;
+    border-radius: 0;
+  }
+
+  .registration-form .form button:hover {
+    text-decoration: underline;
+  }
+
+  .registration-form .default-content-wrapper p {
+    font-size: 36px;
+    font-family: 'roboto';
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .registration-form .default-content-wrapper p::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+  }
+
+  .registration-form .form input {
+    outline: none;
+    border: 1px solid #CCCCCC;
+  }
+
+  .registration-form .form input:focus {
+    border: 1px solid #000000;
+  }

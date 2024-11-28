@@ -1,0 +1,19 @@
+.adventures {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.adventures div p {
+    display: flex;
+    width: 100%;
+    font-size: 42px;
+    font-family: 'roboto';
+    justify-content: center;
+}
+
+.adventures div p .icon {
+    display: flex;
+    width: 100%;
+    width: 150px;
+    height: 150px;
+}

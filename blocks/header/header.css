@@ -276,6 +276,10 @@ header nav .header-links ul li:hover {
     cursor: pointer;
 }
 
+header nav .header-links ul li.is-active {
+  background-color: #FFEA00;
+}
+
 header nav .nav-sections ul>li {
   font-weight: 500;
 }

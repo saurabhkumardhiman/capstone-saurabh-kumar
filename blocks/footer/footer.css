@@ -100,3 +100,7 @@ footer .footer p {
   margin-bottom: 16px;
   font-size: 12px;
 }
+
+.footer .footer-links ul li a {
+  color: #FFFFFF;
+}
