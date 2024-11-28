@@ -1,0 +1,59 @@
+.article-heading {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.article-heading h2 {
+    font-size: 36px;
+    font-family: 'roboto';
+    color: #202020;
+    padding-bottom: 20px;
+}
+
+.article-heading h2::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+}
+
+.articles-list .all-articles .articles-list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 32px;
+}
+
+.articles-list .all-articles .articles-list li {
+    list-style: none;
+}
+
+.articles-list .all-articles .articles-list li .articles-list-img img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.articles-list .all-articles .articles-list li .articles-list-title {
+    font-size: 18px;
+    font-family: 'roboto';
+    font-weight: 500;
+    color: #000000;
+}
+
+.articles-list .all-articles .articles-list li .articles-list-description {
+    font-size: 16px;
+    color: #202020;
+    font-weight: 400;
+    margin-top: 0;
+    font-family: 'roboto';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

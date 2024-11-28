@@ -66,19 +66,21 @@
     background-color: #FFFFFF;
     position: relative;
     width: var(--slide-content-width, auto);
-    width: 90%;
-    top: 10.25rem;
+    width: 85%;
+    top: 11rem;
   }
 
   @media (width >= 500px) {
     .carousel .carousel-slide .carousel-slide-content {
-      top: 11.5rem;
+      top: 12rem;
+      width: 75%;
     }
   }
   
   @media (width >= 900px) {
     .carousel .carousel-slide .carousel-slide-content {
       top: 12.5rem;
+      width: 75%;
     }
   }
   
