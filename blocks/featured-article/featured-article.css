@@ -29,7 +29,13 @@
     display: flex;
     flex-direction: column;
     background-color: #EBEBEB;
-    padding: 3.5em 2em 2em;
+    padding: 16px
+}
+
+@media (width >= 900px) {
+    .featured-article > div div:last-of-type {
+        padding: 3.5em 2em 2em;
+    }
 }
 
 @media (width >= 900px) {
@@ -47,6 +53,13 @@
 .featured-article > div div table tbody tr td h2 {
     font-weight: 400;
     font-family: 'roboto';
+    font-size: 32px;
+}
+
+@media (width >= 900px) {
+    .featured-article > div div table tbody tr td h2 {
+        font-size: 36px;
+    }
 }
 
 .featured-article > div div table tbody tr td {
