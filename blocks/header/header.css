@@ -449,6 +449,13 @@ header nav .nav-tools {
   }
 }
 
+@media (width >= 900px) {
+  header nav .search-bar .icon {
+    width: 24px;
+    height: 21px;
+  }
+}
+
 header nav[aria-expanded='false'] .search-bar p {
   position: absolute;
   top: 18px;
