@@ -31,6 +31,7 @@
 
 .articles-list .all-articles .articles-list li {
     list-style: none;
+    cursor: pointer;
 }
 
 .articles-list .all-articles .articles-list li .articles-list-img img {

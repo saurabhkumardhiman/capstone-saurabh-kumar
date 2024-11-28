@@ -186,10 +186,10 @@ export default async function decorate(block) {
 }
 
 window.onscroll = function () {
-  var header = document.querySelector(".nav-wrapper");
+  var header = document?.querySelector(".nav-wrapper");
   if (window.pageYOffset > 25) {
-    header.classList.add("reduce-header-size");
+    header?.classList.add("reduce-header-size");
   } else {
-    header.classList.remove("reduce-header-size");
+    header?.classList.remove("reduce-header-size");
   }
 }
