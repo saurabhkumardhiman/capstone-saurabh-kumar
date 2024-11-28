@@ -7,7 +7,7 @@ async function fetchArticlesData(jsonURL) {
 }
 
 function createArticleList(articles) {
-  console.log(articles, 'articals')
+
   const articleList = document.createElement("ul");
   articleList.classList.add("articles-list");
 
@@ -29,6 +29,7 @@ function createArticleList(articles) {
     listItem.append(pictureElement, titleElement, descriptionElement);
 
     articleList.appendChild(listItem);
+    
   });
 
   return articleList;
@@ -36,13 +37,14 @@ function createArticleList(articles) {
 
 export default async function decorate(block) {
   const jsonLink = block.querySelector('a[href$=".json"]');
+
   if (jsonLink) {
     const articlesData = await fetchArticlesData(jsonLink.href);
     const articleList = createArticleList(articlesData);
 
     const articlesContainer = document.createElement("div");
     articlesContainer.classList.add("all-articles");
-    
+
     articlesContainer.appendChild(articleList);
     jsonLink.replaceWith(articlesContainer);
   }
