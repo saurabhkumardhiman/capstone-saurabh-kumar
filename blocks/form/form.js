@@ -61,9 +61,14 @@ async function handleSubmit(form) {
       },
     });
     if (response.ok) {
-      if (form.dataset.confirmation) {
-        window.location.href = form.dataset.confirmation;
-      }
+
+      document.querySelector('.registration-form .form .button').classList.remove('btn-disabled');
+      document.querySelector('.registration-form .form').classList.remove('make-blur');
+
+      // if (form.dataset.confirmation) {
+      //   window.location.href = form.dataset.confirmation;
+      // }
+      window.location.href = '/thanks';
     } else {
       const error = await response.text();
       throw new Error(error);
@@ -87,6 +92,8 @@ export default async function decorate(block) {
   block.replaceChildren(form);
 
   form.addEventListener('submit', (e) => {
+    document.querySelector('.registration-form .form .button').classList.add('btn-disabled');
+    document.querySelector('.registration-form .form').classList.add('make-blur');
     e.preventDefault();
     const valid = form.checkValidity();
     if (valid) {
