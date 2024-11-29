@@ -106,6 +106,10 @@
     display: none;
   }
 
+  .tabs .tabs-panel {
+    border-top: 1px solid #EBEBEB;
+  }
+
   .tabs .tabs-panel div h3 {
     font-size: 28px;
     color: #202020;
