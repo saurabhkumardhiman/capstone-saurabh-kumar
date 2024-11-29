@@ -33,9 +33,19 @@
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
     main.error {
-      min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding-top: 40px;
+      height: 100vw;
+    }
+
+    @media (width >= 900px) {
+      main.error {
+        height: 30vw;
+      } 
+
     }
 
     main.error .error-number {
@@ -43,8 +53,28 @@
     }
 
     main.error .error-number text {
-      font-family: monospace;
+      font-family: 'roboto';
     }
+
+    main.error .error-message {
+      font-size: 32px;
+      font-family: 'roboto';
+    }
+
+    @media (width <= 900px) {
+      main.error .error-message {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media (width <= 900px) {
+      main.error .button-container {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
 </head>
