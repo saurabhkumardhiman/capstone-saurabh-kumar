@@ -44,3 +44,21 @@
     content: "";
     display: block;
 }
+
+.section.adventures-container #current-adventures {
+    font-size: 42px;
+    font-family: 'roboto';
+    color: #202020;
+    font-weight: 400;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+
+.section.adventures-container #current-adventures::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
+}

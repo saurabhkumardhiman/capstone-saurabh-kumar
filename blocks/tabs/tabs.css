@@ -1,7 +1,6 @@
 .tabs .tabs-list {
     display: flex;
     gap: 0.5ch;
-    justify-content: space-between;
     max-width: 100%;
     font-size: var(--body-font-size-xs);
     overflow-x: auto;
@@ -43,7 +42,7 @@
   
   .tabs .tabs-list button p {
     margin: 0;
-    font-size: 36px;
+    font-size: 24px;
     font-family: 'roboto';
     color: #202020;
     font-weight: 400;
@@ -63,12 +62,20 @@
     border: none;
     border-bottom: 5px solid #FFEA00;
     padding: 0;
+    margin-top: 5px;
+    background: #EBEBEB;
   }
 
-  @media (width <= 900px) {
+  @media (width >= 900px) {
     .tabs .tabs-list button[aria-selected='true'] {
-        margin-top: 5px;
-    }
+        padding: 0 20px;
+        margin-right: 20px;
+      }
+
+      .tabs .tabs-list button[aria-selected='true'] p:hover {
+        border-bottom: 0;
+        margin-top: 0px;
+      }
   }
   
   .tabs .tabs-panel {
@@ -83,6 +90,16 @@
 
   .tabs .tabs-list .tabs-tab {
     padding: 0;
+  }
+
+  @media (width >= 900px) {
+    .tabs .tabs-list .tabs-tab {
+        padding-right: 20px;
+    }
+    .tabs .tabs-list .tabs-tab p:hover {
+        border-bottom: 5px solid #FFEA00;
+        margin-top: 5px;
+      }
   }
 
   .tabs .tabs-list .tabs-tab p::after {
