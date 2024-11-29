@@ -281,3 +281,14 @@ main .section.highlight {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+
+.section.blogs div #blogs {
+  padding-top: 40px;
+  font-size: 42px;
+  font-family: 'roboto';
+}
+
+.section.blogs div p img {
+  width: 100%;
+  padding-top: 40px;
+}

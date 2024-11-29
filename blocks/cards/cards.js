@@ -25,5 +25,4 @@ export default async function decorate(block) {
       viewTrip.textContent = viewTrips || defaultPlaceholder;
   }
 
-
 }
