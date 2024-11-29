@@ -17,6 +17,12 @@
     object-fit: cover;
 }
 
+@media (width <= 900px) {
+    .adventures div picture img {
+        height: auto;
+    }
+}
+
 .section.adventures-container .adventures-wrapper {
     max-width: 100%;
     padding: 0;
