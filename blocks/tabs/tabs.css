@@ -1,0 +1,114 @@
+.tabs .tabs-list {
+    display: flex;
+    gap: 0.5ch;
+    justify-content: space-between;
+    max-width: 100%;
+    font-size: var(--body-font-size-xs);
+    overflow-x: auto;
+  }
+
+  @media (width <= 900px) {
+    .tabs .tabs-list {
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (width >= 600px) {
+    .tabs .tabs-list {
+      font-size: var(--body-font-size-s);
+    }
+  }
+  
+  @media (width >= 900px) {
+    .tabs .tabs-list {
+      font-size: var(--body-font-size-m);
+    }
+  }
+  
+  .tabs .tabs-list button {
+    flex: 0 0 max-content;
+    margin: 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+    color: initial;
+    font-weight: bold;
+    line-height: unset;
+    text-align: initial;
+    text-overflow: unset;
+    overflow: unset;
+    white-space: unset;
+    transition: background-color 0.2s;
+  }
+  
+  .tabs .tabs-list button p {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'roboto';
+    color: #202020;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  @media (width <= 900px) {
+    .tabs .tabs-list button p {
+        padding: 5px;
+        font-size: 24px;
+    }
+  }
+  
+  .tabs .tabs-list button[aria-selected='true'] {
+    background: none;
+    cursor: initial;
+    border: none;
+    border-bottom: 5px solid #FFEA00;
+    padding: 0;
+  }
+
+  @media (width <= 900px) {
+    .tabs .tabs-list button[aria-selected='true'] {
+        margin-top: 5px;
+    }
+  }
+  
+  .tabs .tabs-panel {
+    margin-top: -1px;
+    padding-top: 24px;
+    overflow: auto;
+  }
+  
+  .tabs .tabs-panel[aria-hidden='true'] {
+    display: none;
+  }
+
+  .tabs .tabs-list .tabs-tab {
+    padding: 0;
+  }
+
+  .tabs .tabs-list .tabs-tab p::after {
+    display: none;
+  }
+
+  .tabs .tabs-panel div h3 {
+    font-size: 28px;
+    color: #202020;
+    font-family: 'roboto';
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .tabs .tabs-panel div p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'roboto';
+    color: #202020;
+  }
+
+  .tabs .tabs-panel div p img {
+    width: 100%;
+  }
+
+  .tabs .tabs-panel p::after {
+    display: none;
+  }

@@ -1,5 +1,4 @@
 .adventures {
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -11,9 +10,31 @@
     justify-content: center;
 }
 
-.adventures div p .icon {
+.adventures div picture img {
     display: flex;
     width: 100%;
-    width: 150px;
-    height: 150px;
+    height: 640px;
+    object-fit: cover;
+}
+
+.section.adventures-container .adventures-wrapper {
+    max-width: 100%;
+    padding: 0;
+}
+
+.section.adventures-container p {
+    font-size: 42px;
+    color: #202020;
+    font-family: 'roboto';
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.section.adventures-container p::after {
+    height: 3px;
+    background: #FFEA00;
+    width: 100px;
+    position: absolute;
+    content: "";
+    display: block;
 }
