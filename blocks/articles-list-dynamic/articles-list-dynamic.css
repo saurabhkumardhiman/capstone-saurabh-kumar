@@ -19,7 +19,7 @@
     display: block;
 }
 
-.articles-list .all-articles .articles-list {
+.articles-list-dynamic .all-articles .articles-list {
     display: flex;
     width: 100%;
     margin: 0;
@@ -29,24 +29,24 @@
     grid-gap: 32px;
 }
 
-.articles-list .all-articles .articles-list li {
+.articles-list-dynamic .all-articles .articles-list li {
     list-style: none;
     cursor: pointer;
 }
 
-.articles-list .all-articles .articles-list li .articles-list-img img {
+.articles-list-dynamic .all-articles .articles-list li .articles-list-img img {
     aspect-ratio: 4/3;
     object-fit: cover;
 }
 
-.articles-list .all-articles .articles-list li .articles-list-title {
+.articles-list-dynamic .all-articles .articles-list li .articles-list-title {
     font-size: 18px;
     font-family: 'roboto';
     font-weight: 500;
     color: #000000;
 }
 
-.articles-list .all-articles .articles-list li .articles-list-description {
+.articles-list-dynamic .all-articles .articles-list li .articles-list-description {
     font-size: 16px;
     color: #202020;
     font-weight: 400;
