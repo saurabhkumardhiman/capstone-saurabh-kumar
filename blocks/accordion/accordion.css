@@ -1,6 +1,13 @@
 .accordion {
     padding-top: 40px;
     padding-bottom: 20px;
+    width: 100%
+}
+
+@media (width >= 900px) {
+  .accordion {
+    width: 62%;
+  }
 }
   
   .accordion details p {
