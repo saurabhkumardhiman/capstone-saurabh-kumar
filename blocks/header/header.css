@@ -7,7 +7,7 @@ header .nav-wrapper {
   padding: 25px 0;
   margin-top: 40px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-  -webkit-transition: padding-bottom .5s ease, padding-top .5s;
+  -webkit-transition: padding-bottom .3s ease, padding-top .3s;
 }
 
 @media (width >=900px) {
@@ -30,7 +30,7 @@ header {
   header .nav-wrapper.reduce-header-size {
     padding: 15px 0;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-    -webkit-transition: padding-bottom .5s ease, padding-top .5s;
+    -webkit-transition: padding-bottom .3s ease, padding-top .3s;
   }
 }
 
