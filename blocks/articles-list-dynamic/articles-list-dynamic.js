@@ -16,10 +16,12 @@ function createArticleList(articles) {
     listItem.classList.add("list");
 
     let pictureElement;
-    if (article.image) {
+    if (article.image.includes('default-meta-image')) {
+      pictureElement = document.createElement('img');
+      pictureElement.src = 'https://main--capstone-saurabh-kumar--saurabhkumardhiman.aem.live/default-image/media_192c4eb2321321fa7e0e12ed045e4c67c02d57f27.jpeg';
+    }
+    else {
       pictureElement = createOptimizedPicture(article.image);
-    } else {
-      pictureElement = createOptimizedPicture('https://main--capstone-saurabh-kumar--saurabhkumardhiman.aem.live/default-image/media_192c4eb2321321fa7e0e12ed045e4c67c02d57f27.jpeg');
     }
     pictureElement.classList.add("articles-list-img");
 
@@ -35,7 +37,7 @@ function createArticleList(articles) {
     listItem.append(pictureElement, titleElement, descriptionElement);
 
     articleList.appendChild(listItem);
-    
+
   });
 
   return articleList;
