@@ -15,8 +15,14 @@ function createArticleList(articles) {
     const listItem = document.createElement("li");
     listItem.classList.add("list");
 
-    const pictureElement = createOptimizedPicture(article.image);
+    let pictureElement;
+    if (article.image) {
+      pictureElement = createOptimizedPicture(article.image);
+    } else {
+      pictureElement = createOptimizedPicture('https://main--capstone-saurabh-kumar--saurabhkumardhiman.aem.live/default-image/media_192c4eb2321321fa7e0e12ed045e4c67c02d57f27.jpeg');
+    }
     pictureElement.classList.add("articles-list-img");
+
 
     const titleElement = document.createElement("p");
     titleElement.classList.add("articles-list-title");
