@@ -64,3 +64,14 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
+
+.articles-list-dynamic .all-articles .articles-list .list {
+    position: relative;
+}
+
+.articles-list-dynamic .all-articles .articles-list .list .url-path {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

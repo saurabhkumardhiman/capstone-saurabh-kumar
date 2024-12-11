@@ -14,6 +14,10 @@ function createArticleList(articles) {
     const listItem = document.createElement('li');
     listItem.classList.add('list');
 
+    const urlpath = document.createElement('a');
+    urlpath.href = article.path;
+    urlpath.classList.add('url-path');
+
     let pictureElement;
     if (article.image.includes('default-meta-image')) {
       pictureElement = document.createElement('img');
@@ -31,7 +35,7 @@ function createArticleList(articles) {
     descriptionElement.classList.add('articles-list-description');
     descriptionElement.innerHTML = article.description;
 
-    listItem.append(pictureElement, titleElement, descriptionElement);
+    listItem.append(pictureElement, titleElement, descriptionElement, urlpath);
 
     articleList.appendChild(listItem);
   });
