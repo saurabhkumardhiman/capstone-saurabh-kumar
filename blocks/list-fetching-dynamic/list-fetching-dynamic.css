@@ -1,7 +1,7 @@
 .list-fetching-dynamic-container #dynamic-list {
     font-size: 24px;
-    color: #000000;
-    font-family: 'roboto';
+    color: #000;
+    font-family: Roboto, Arial, sans-serif;
     font-weight: 400;
     padding-bottom: 16px;
     margin: 0;
@@ -33,14 +33,14 @@
 
 .list-fetching-dynamic .dynamic-list .dynamic-list-details .title {
     font-size: 18px;
-    font-family: 'roboto';
-    color: #000000;
+    font-family: Roboto, Arial, sans-serif;
+    color: #000;
     padding-bottom: 2px;
 }
 
 .list-fetching-dynamic .dynamic-list .dynamic-list-details .description {
     font-size: 16px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     color: #6B6464;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -5,7 +5,7 @@
 
 .article-heading h2 {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     color: #202020;
     padding-bottom: 20px;
 }
@@ -20,7 +20,6 @@
 }
 
 .articles-list-dynamic .all-articles .articles-list {
-    display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -34,24 +33,23 @@
     cursor: pointer;
 }
 
-.articles-list-dynamic .all-articles .articles-list li .articles-list-img img {
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    width: 100%;
-    object-fit: fill;
-}
-
 .articles-list-dynamic .all-articles .articles-list .list img {
     aspect-ratio: 4/3;
     object-fit: cover;
     width: 100%;
 }
 
+.articles-list-dynamic .all-articles .articles-list li .articles-list-img img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: fill;
+}
+
 .articles-list-dynamic .all-articles .articles-list li .articles-list-title {
     font-size: 18px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     font-weight: 500;
-    color: #000000;
+    color: #000;
 }
 
 .articles-list-dynamic .all-articles .articles-list li .articles-list-description {
@@ -59,7 +57,7 @@
     color: #202020;
     font-weight: 400;
     margin-top: 0;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

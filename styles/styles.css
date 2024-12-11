@@ -259,7 +259,7 @@ main .section.highlight {
 /* Over writing below properties as these buttons are common through out */
 .button-container a {
   background-color: #FFEA00 !important;
-  color: #000000 !important;
+  color: #000 !important;
   border-radius: 0 !important;
   font-size: 14px;
 }
@@ -285,7 +285,7 @@ main .section.highlight {
 .section.blogs div #blogs {
   padding-top: 40px;
   font-size: 42px;
-  font-family: 'roboto';
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .section.blogs div p img {

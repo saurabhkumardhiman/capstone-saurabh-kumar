@@ -6,8 +6,8 @@ header .nav-wrapper {
   position: fixed;
   padding: 25px 0;
   margin-top: 40px;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-  -webkit-transition: padding-bottom .3s ease, padding-top .3s;
+  box-shadow: 0 8px 20px 0 #00000042;
+  transition: padding-bottom 0.3s ease, padding-top 0.3s;
 }
 
 @media (width >=900px) {
@@ -29,8 +29,8 @@ header {
 @media (width >=900px) {
   header .nav-wrapper.reduce-header-size {
     padding: 15px 0;
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
-    -webkit-transition: padding-bottom .3s ease, padding-top .3s;
+    box-shadow: 0 8px 20px 0 #00000042;
+    transition: padding-bottom 0.3s ease, padding-top 0.3s;
   }
 }
 
@@ -73,6 +73,10 @@ header nav[aria-expanded='true'] {
 header nav p {
   margin: 0;
   line-height: 1;
+}
+
+.top-nav-bar a {
+  color: #FFF;
 }
 
 header nav a:any-link {
@@ -270,6 +274,14 @@ header nav .header-links ul li {
   font-size: 14px;
 }
 
+header nav .nav-sections ul>li {
+  font-weight: 500;
+}
+
+header nav .nav-sections ul>li>ul>li {
+  font-weight: 400;
+}
+
 header nav .header-links ul li:hover {
   background-color: #FFEA00;
   text-decoration: none;
@@ -280,16 +292,8 @@ header nav .header-links ul li.is-active {
   background-color: #FFEA00;
 }
 
-header nav .nav-sections ul>li {
-  font-weight: 500;
-}
-
 header nav .nav-sections ul>li>ul {
   margin-top: 0;
-}
-
-header nav .nav-sections ul>li>ul>li {
-  font-weight: 400;
 }
 
 @media (width >=900px) {
@@ -403,10 +407,6 @@ header nav .nav-tools {
   .top-nav-bar p {
     padding-right: 232px;
   }
-}
-
-.top-nav-bar a {
-  color: #FFFFFF;
 }
 
 .sub-nav-bar p {

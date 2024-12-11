@@ -132,27 +132,25 @@ export default async function decorate(block) {
     brandLink.closest('.button-container').className = '';
   }
 
-  const navSections = nav.querySelector(".nav-tools");
+  const navSections = nav.querySelector('.nav-tools');
   if (navSections) {
     const currentUrl = window.location.pathname;
-    navSections.querySelectorAll(":scope .default-content-wrapper > ul > li").forEach((headerNavSection) => {
-      const headerNavLinks = headerNavSection.querySelector("a");
+    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((headerNavSection) => {
+      const headerNavLinks = headerNavSection.querySelector('a');
       if (headerNavLinks) {
         const linkUrl = new URL(headerNavLinks.href, window.location.origin).pathname;
         if (currentUrl === linkUrl) {
-          headerNavSection.classList.add("is-active");
+          headerNavSection.classList.add('is-active');
         }
       }
-      if (headerNavSection.querySelector("ul"))
-        headerNavSection.classList.add("nav-drop");
-      headerNavSection.addEventListener("click", () => {
+      if (headerNavSection.querySelector('ul')) { headerNavSection.classList.add('nav-drop'); }
+      headerNavSection.addEventListener('click', () => {
         if (isDesktop.matches) {
-          const expanded =
-            headerNavSection.getAttribute("aria-expanded") === "true";
+          const expanded = headerNavSection.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navSections);
           headerNavSection.setAttribute(
-            "aria-expanded",
-            expanded ? "false" : "true"
+            'aria-expanded',
+            expanded ? 'false' : 'true',
           );
         }
       });
@@ -177,19 +175,18 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
-  const topNavBar = nav.querySelector('.top-nav-bar');
+  const topNavBar = nav?.querySelector('.top-nav-bar');
   block.prepend(topNavBar);
 
-  const searchlabel = document.querySelector('#form-search-label');
+  const searchlabel = document?.querySelector('#form-search-label');
   searchlabel.innerHTML = '';
-
 }
 
 window.onscroll = function () {
-  var header = document?.querySelector(".nav-wrapper");
+  const header = document?.querySelector('.nav-wrapper');
   if (window.pageYOffset > 25) {
-    header?.classList.add("reduce-header-size");
+    header?.classList.add('reduce-header-size');
   } else {
-    header?.classList.remove("reduce-header-size");
+    header?.classList.remove('reduce-header-size');
   }
-}
+};

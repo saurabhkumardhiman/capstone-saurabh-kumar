@@ -2,15 +2,24 @@
     padding-top: 40px;
 }
 
+.about-us .about-us-card-body p {
+  color: #202020;
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
 .section.main-heading .default-content-wrapper p {
     font-size: 42px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .section.description .default-content-wrapper p {
     font-size: 14px;
     font-style: italic;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .about-us > ul {
@@ -42,20 +51,11 @@
   .about-us .about-us-card-body h3 {
     font-size: 24px;
     color: #202020;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     font-weight: 400;
     margin-top: 0;
   }
   
-  .about-us .about-us-card-body p {
-    color: #202020;
-    font-size: 14px;
-    font-family: 'roboto';
-    font-weight: 400;
-    margin-top: 4px;
-    margin-bottom: 16px;
-  }
-
   .about-us .about-us-card-body p .icon {
     color: #696969;
     font-size: 14px;
@@ -77,7 +77,7 @@
   
   .section.sub-heading .default-content-wrapper p {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
   }
 
   .section.sub-heading .default-content-wrapper p::after {

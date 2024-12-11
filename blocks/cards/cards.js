@@ -15,14 +15,13 @@ export default async function decorate(block) {
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
-  
-  // Placeholder
-  const placeholders = await fetchPlaceholders("");
-  const defaultPlaceholder = "";
-  const { viewTrips } = placeholders;
-  const viewTrip = document.querySelector(".section.cards-container .default-content-wrapper  p a");
-    if (viewTrip) {
-      viewTrip.textContent = viewTrips || defaultPlaceholder;
-  }
 
+  // Placeholder
+  const placeholders = await fetchPlaceholders('');
+  const defaultPlaceholder = '';
+  const { viewTrips } = placeholders;
+  const viewTrip = document.querySelector('.section.cards-container .default-content-wrapper  p a');
+  if (viewTrip) {
+    viewTrip.textContent = viewTrips || defaultPlaceholder;
+  }
 }

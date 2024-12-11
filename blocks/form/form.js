@@ -61,7 +61,6 @@ async function handleSubmit(form) {
       },
     });
     if (response.ok) {
-
       document.querySelector('.registration-form .form .button').classList.remove('btn-disabled');
       document.querySelector('.registration-form .form').classList.remove('make-blur');
 

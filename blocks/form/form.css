@@ -72,6 +72,10 @@
   .form textarea {
     resize: vertical;
   }
+
+  .form input {
+    padding-left: 30px;
+  }
   
   .form input:hover,
   .form select:hover,
@@ -173,16 +177,12 @@
 
   .form #form-search {
     outline: none;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #CCC;
   }
 
   .form #form-search:focus {
     outline: none;
-    border: 1px solid #000000;
-  }
-
-  .form input {
-    padding-left: 30px;
+    border: 1px solid #000;
   }
 
   .registration-form .form button {
@@ -198,7 +198,7 @@
 
   .registration-form .default-content-wrapper p {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     padding-top: 40px;
     padding-bottom: 30px;
   }
@@ -214,11 +214,11 @@
 
   .registration-form .form input {
     outline: none;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #CCC;
   }
 
   .registration-form .form input:focus {
-    border: 1px solid #000000;
+    border: 1px solid #000;
   }
 
   .registration-form .form.make-blur {
@@ -226,6 +226,6 @@
   }
 
   .registration-form .form .button.btn-disabled {
-    background-color: #CCCCCC;
+    background-color: #CCC;
     pointer-events: none;
   }

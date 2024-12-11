@@ -10,10 +10,15 @@
   .custom-card > ul > li {
     background-color: var(--background-color);
     cursor: pointer;
+    position: relative;
+    border: 1px solid #CCC;
+    opacity: 0.7;
+    pointer-events: none;
   }
   
   .custom-card .custom-card-body {
     margin: 0;
+    position: relative;
   }
   
   .custom-card .custom-card-body h3 {
@@ -31,33 +36,22 @@
     padding-top: 24px;
   }
 
-  .custom-card > ul > li {
-    position: relative;
-    border: 1px solid #CCCCCC;
-    opacity: 0.7;
-    pointer-events: none;
-  }
-
   .custom-card > ul > li::after {
     width: 0;
     content: '';
     height: 0;
-    border-top: 0px solid transparent;
+    border-top: 0 solid transparent;
     border-left: 72px solid #ffea00;
     border-bottom: 54px solid transparent;
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     z-index: 1;
-}
-
-.custom-card .custom-card-body {
-    position: relative;
 }
 
 .custom-card .custom-card-body h2{
     font-size: 18px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     color: #202020;
     padding-left: 12px;
 }
@@ -84,7 +78,7 @@
   
   .custom-card-container .default-content-wrapper:first-of-type p {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     padding-bottom: 10px;
   }
   
@@ -99,12 +93,12 @@
 
   .section .default-content-wrapper #members-only {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
   }
 
   .section .default-content-wrapper #members-only + p {
     font-size: 16px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
   }
 
 

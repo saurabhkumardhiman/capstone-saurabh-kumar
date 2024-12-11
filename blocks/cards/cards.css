@@ -43,7 +43,7 @@
 
 .cards-container .default-content-wrapper:first-of-type p {
   font-size: 36px;
-  font-family: 'roboto';
+  font-family: Roboto, Arial, sans-serif;
   padding-bottom: 10px;
 }
 

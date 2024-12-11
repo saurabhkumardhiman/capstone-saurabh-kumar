@@ -62,8 +62,8 @@
     z-index: 1;
     margin: auto;
     padding: 16px;
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #000;
+    background-color: #FFF;
     position: relative;
     width: var(--slide-content-width, auto);
     width: 85%;
@@ -109,6 +109,13 @@
     background-color: #dadada;
     transition: background-color 0.2s;
   }
+
+  .carousel .carousel-navigation-buttons button {
+    position: relative;
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
   
   .carousel .carousel-slide-indicator button:disabled,
   .carousel .carousel-slide-indicator button:hover,
@@ -118,22 +125,11 @@
   
   .carousel .carousel-navigation-buttons {
     position: absolute;
-    top: auto;
-    left: 12px;
-    right: 12px;
     justify-content: flex-end;
     align-items: center;
     z-index: 1;
     display: flex;
-    bottom: -60px;
-  }
-  
-  /* stylelint-disable-next-line no-descending-specificity */
-  .carousel .carousel-navigation-buttons button {
-    position: relative;
-    background: none;
-    margin: 0;
-    padding: 0;
+    inset: auto 12px -60px;
   }
    
   .carousel .carousel-navigation-buttons button::after {
@@ -142,7 +138,7 @@
     font-size: 35px;
     border-bottom: 0;
     border-left: 0;
-    color: #000000;
+    color: #000;
     transform: rotate(180deg);
     position: relative;
     padding-left: 8px;
@@ -184,7 +180,7 @@
 
   .carousel-container .default-content-wrapper p {
     font-size: 36px;
-    font-family: 'roboto';
+    font-family: Roboto, Arial, sans-serif;
     padding-bottom: 10px;
   }
 
